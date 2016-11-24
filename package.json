@@ -1,0 +1,25 @@
+{
+  "name": "discord-ban-list",
+  "version": "1.0.2",
+  "description": "Check if a certain Discord user ID is listed in the global ban list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/austinhuang0131/discord-ban-list-node.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "Austin Huang <austinhuang0131@icloud.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/austinhuang0131/discord-ban-list-node/issues"
+  },
+  "homepage": "https://github.com/austinhuang0131/discord-ban-list-node#readme",
+  "dependencies": {
+    "request": "^2.79.0"
+  }
+}
