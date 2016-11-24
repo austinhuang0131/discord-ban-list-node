@@ -1,6 +1,6 @@
 {
   "name": "discord-ban-list",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Check if a certain Discord user ID is listed in the global ban list",
   "main": "index.js",
   "scripts": {
