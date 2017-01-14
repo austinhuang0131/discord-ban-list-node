@@ -24,6 +24,21 @@ module.exports = function test(query) {
         		}
         	});
         	if (list.indexOf(query) > -1) {result = true;}
+            if (result = false) {
+                request('https://bans.discordlist.net/api', function(error, response, body) {
+                    if (error || response.statusCode !== 200) {
+                        return "Failed to ping the Ban List.";
+                    }
+                    body = JSON.parse(body);
+                    if (body.length === 0) {
+                        return reject("Failed to ping the Ban List.");
+                    }
+                    body.forEach(function(entry) {
+                        list.push(entry[0]);
+                    });
+                    if (list.indexOf(query) > -1) {result = true;}
+                })
+            }
         	return resolve(result);
         });
     });
