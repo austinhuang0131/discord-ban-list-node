@@ -7,5 +7,15 @@ var dbl = require("discord-ban-list");
 dbl("1234567890").then(isBanned => {
     console.log(isBanned);
 }).catch(console.log);
-// Returns true/false
+// If listed on either website then return true, else return false
+
+dbl.wiki("1234567890").then(isBanned => {
+    console.log(isBanned);
+}).catch(console.log);
+// If listed on http://discord.shoutwiki.com/wiki/Ban_List then return true, else return false
+
+dbl.list("1234567890").then(isBanned => {
+    console.log(isBanned);
+}).catch(console.log);
+// If listed on http://bans.discordlist.net then return true, else return false
 ```
