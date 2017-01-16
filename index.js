@@ -50,7 +50,7 @@ module.exports = function test(query) {
  * 
  *  var dbl = require("discord-ban-list");
     dbl("1234567890").then(isBanned => {
-
+       console.log(isBanned);
        //return true or false
     }).catch(console.log);
  * 
